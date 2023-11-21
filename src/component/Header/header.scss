@@ -1,0 +1,28 @@
+.navbar{
+    margin-top:10vh;
+    height: 10vh;
+    width: 100vw;
+    ul{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        li{
+            .a{
+                text-decoration: none;
+                color: black;
+                padding: 5vw;
+                transition: all 0.3s ease-out;
+            }
+            .a:hover{
+                color: white;
+                background-color: black;
+                border-radius: 50%;
+            }
+        }
+
+    }
+}
+

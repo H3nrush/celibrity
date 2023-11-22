@@ -13,7 +13,7 @@ function Home(){
     })
     return(
         <>
-        <Header />
+    <Header thisPage="Home" />
         <div className="container">
         <p>{shittty}</p>
         </div>

@@ -2,7 +2,7 @@ import Header from "../component/Header/Header";
 import SCard from "./sCard";
 
 function Speakers(){
-    const speak =["hassan"];
+    const speak =["Belli"];
        
 return(
     <>

@@ -7,7 +7,7 @@ import OneOfAll from './pages/OneOfAll';
 import Last from './pages/Last';
 import Speakers from './Speakers/Math';
 import Click from './pages/Click';
-import Massenger from './pages/Home/massenger';
+import Massenger from './pages/massenger';
 
 function App() {
   return (

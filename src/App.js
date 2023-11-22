@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import OneOfAll from './pages/OneOfAll';
 import Last from './pages/Last';
 import Speakers from './Speakers/Math';
+import Click from './pages/Click';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/celiLast' element={<OneOfAll />} />
         <Route path='/celiOne' element={<Last />} />
         <Route path='/speaker' element={<Speakers />} />
+        <Route path='/Click' element={<Click />}/>
       </Routes>
     </BrowserRouter>
   );

@@ -9,6 +9,7 @@ function Header({thisPage}){
                     <li>{thisPage === "Home" ? (<strong><Link className='a' to={"/"}>Home</Link></strong>):(<Link className='a' to={"/"}>Home</Link>)}</li>
                     <li>{thisPage === "celiLast" ? (<strong><Link className='a' to={"/celiLast"}>bio</Link></strong>):(<Link className='a' to={"/celiLast"}>bio</Link>)}</li>
                     <li>{thisPage === "celiOne" ? (<strong><Link className='a' to={"/celiOne"}>Team</Link></strong>):(<Link className='a' to={"/celiOne"}>Team</Link>)}</li>
+                    <li>{thisPage === "speaker" ? (<strong><Link className='a' to={"/speaker"}>speaker</Link></strong>):(<Link className='a' to={"/speaker"}>speaker</Link>)}</li>
                 </ul>
             </nav>
         </div>

@@ -6,7 +6,7 @@ function Speakers(){
        
 return(
     <>
-    <Header />
+    <Header thisPage="speaker"/>
             {speak.map(speaker =>{
                return <SCard currentSpeaker={speaker} />
             })}

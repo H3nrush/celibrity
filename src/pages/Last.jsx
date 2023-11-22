@@ -20,7 +20,7 @@ function Last(){
     })
     return(<>
     <Header thisPage="celiOne" />
-    <div>
+    <div className="container">
         {shittty}
     </div>
     

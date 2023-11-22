@@ -8,7 +8,7 @@ function Click(){
     };
     return(<>
             <Header thisPage="btnClick" />
-           <main>
+           <main className="container">
             {displayText && <p>Hello to you</p>}
             <button onClick={btnClick}>Click Here Please</button>
            </main>

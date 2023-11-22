@@ -11,7 +11,7 @@ function OneOfAll(){
     })
     return(<>
     <Header thisPage="celiLast" />
-    <div>
+    <div className="container">
         {shittty}
     </div>
 

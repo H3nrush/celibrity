@@ -12,6 +12,7 @@ function Header({thisPage}){
                     <li>{thisPage === "speaker" ? (<strong><Link className='a' to={"/speaker"}>speaker</Link></strong>):(<Link className='a' to={"/speaker"}>speaker</Link>)}</li>
                     <li>{thisPage === "btnClick" ? (<strong><Link className='a' to={"/Click"}>Click</Link></strong>):(<Link className='a' to={"/Click"}>Click</Link>)}</li>
                     <li>{thisPage === "Massenger" ? (<strong><Link className='a' to={"/Massenger"}>Massenger</Link></strong>):(<Link className='a' to={"/Massenger"}>Massenger</Link>)}</li>
+                    <li>{thisPage === "Likes" ? (<strong><Link className='a' to={"/Likes"}>Liker</Link></strong>):(<Link className='a' to={"/Likes"}>Liker</Link>)}</li>
                 </ul>
             </nav>
         </div>

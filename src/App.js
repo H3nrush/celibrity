@@ -8,6 +8,7 @@ import Last from './pages/Last';
 import Speakers from './Speakers/Math';
 import Click from './pages/Click';
 import Massenger from './pages/massenger';
+import Likes from './pages/likes';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/speaker' element={<Speakers />} />
         <Route path='/Click' element={<Click />}/>
         <Route path='/Massenger' element={<Massenger />} />
+        <Route path='/Likes' element={<Likes />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,7 +5,7 @@ function Likes (){
     //here i make two const one for rechange the value and one to type the value in tags 
     
     const [likesCount , setLikesCount] = useState(0);
-    const [Massege , setMassege] = useState(null);
+    const [Massege , setMassege] = useState(false);
     //useState will give a value for both and reshare the value between two const
     // so here i explain to the const everytime that i click on the btn give me one value of 1+
 
@@ -13,8 +13,14 @@ function Likes (){
         if (likesCount < 5){
         setLikesCount(likesCount+1);
     }else{
-        setMassege("you are liking a lot")
+        setMassege(true)
+       
     }
+    
+    }
+    const iKer = () => {
+        setMassege(false)
+        setLikesCount(0)
     }
     
 
@@ -29,7 +35,13 @@ function Likes (){
         <br /> <br />
         
         <strong>You have likes {likesCount} times!</strong>
-        <p>{Massege}</p>
+        <br /><br />
+        {Massege&&(
+        <>
+        <button onClick={iKer}>reLike</button>
+        <p>you can not send like more than 5</p>
+        </>
+        )}
         </div>
 
         </main>)

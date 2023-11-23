@@ -6,6 +6,7 @@ function Drinks (){
   // i use the useState to reshare the answer between consts and print the answert in tags
     const [drinksR , setDrinksR] = useState(null);
   //i wanna recieve a data if the drinks for ex: for bar so first i will add the pachage url
+  if (!drinksR){
     fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=")
     //then in here iwill say while you recieve answer from url add the lists of value into a json file 
     .then((answer) => {
@@ -15,14 +16,27 @@ function Drinks (){
     .then((json) => {
       // now i test whith console.log
       // here i call the useState const to bring the same value of json
-    setDrinksR(json);
+      // i used .drinks to choose the names for print
+    setDrinksR(json.drinks);
     });
-
+    }
     return(<>
     <Header thisPage="Drinks" />
-    <p>Bonjour</p>
-    {/* i said here if drinksR in not empty write me drinks are readey and if not else */}
-    {drinksR ? <article>Drinks are reader</article> : <p>Drinks are not ready</p>}
-    </>);
+    {/* here i used the (if) to say if drinksR is not null print me strDrinks else say (Drinks are not ready still) */}
+    {drinksR ? (
+      <>
+      {drinksR.map((cocktail) => {
+            return (
+              <article>
+                <h2>{cocktail.strDrink}</h2>
+              </article>
+            );
+          })}
+      </>
+      ):(
+        <p>Drinks are not ready still</p>
+      )}
+
+    </>)
 };
 export default Drinks;

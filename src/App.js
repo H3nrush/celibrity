@@ -9,6 +9,7 @@ import Speakers from './Speakers/Math';
 import Click from './pages/Click';
 import Massenger from './pages/massenger';
 import Likes from './pages/likes';
+import Drinks from './pages/Home/drinks';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Click' element={<Click />}/>
         <Route path='/Massenger' element={<Massenger />} />
         <Route path='/Likes' element={<Likes />} />
+        <Route path='/Drinks' element={<Drinks />} />
       </Routes>
     </BrowserRouter>
   );

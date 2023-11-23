@@ -9,7 +9,7 @@ import Speakers from './Speakers/Math';
 import Click from './pages/Click';
 import Massenger from './pages/massenger';
 import Likes from './pages/likes';
-import Drinks from './pages/Home/drinks';
+import Drinks from './pages/drinks';
 
 function App() {
   return (
